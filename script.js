@@ -124,16 +124,17 @@ function getSavedColumns() {
     completeListArray = JSON.parse(localStorage.completeItems);
     onHoldListArray = JSON.parse(localStorage.onHoldItems);
   } else {
-    backlogListArray = ['Buscar miel', 'llamar a peloso'];
+    backlogListArray = ['Desarrollar un curso', 'Aprender nuevos temas'];
+    progressListArray = ['Trabajar en el proyecto', 'Escuchar música'];
+    completeListArray = ['Leer un libro', 'Hacer el almuerzo'];
+    onHoldListArray = ['Llamar al proveedor'];
+/*     backlogListArray = ['Buscar miel', 'llamar a peloso'];
     progressListArray = ['Publicar en la casita', 'Escuchar música'];
     completeListArray = ['Leer el libro', 'Hacer el almuerzo'];
-    onHoldListArray = ['Salir a entrenar'];
+    onHoldListArray = ['Salir a entrenar']; */
   }
 }
-    /* backlogListArray = ['Desarrollar un curso', 'Sentarse y relajarse'];
-    progressListArray = ['Trabajar en el proyecto', 'Escuchar música'];
-    completeListArray = ['Leer el libro', 'Hacer el almuerzo'];
-    onHoldListArray = ['Salir a entrenar']; */
+    
 
 // Create DOM Elements for each list item
 function createItemEl(columnEl, column, item, index) {
